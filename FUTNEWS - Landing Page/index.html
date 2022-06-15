@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutNews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png.png" type="image/x-icon">   
+</head>
+<body>   
+    </a>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Pagina Inicial</a></li>
+                <li><a href="index4.html">Sobre nós</a></li>
+                <li><a href="index3.html">Formas de Pagamento</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Cobertura e Produtos<br><span>Fora das 4 linhas</span></h2>
+                <p>Ser um ambiente de empatia, inclusão, convivência e diálogo com todos os públicos, refencia no respeito à diversidade cultura            
+                </p>
+                <a href="index2.html">Loja</a>
+            </div>
+            <div class="imgBox">
+              <img src="thumb2.png.png" height="400px" class="FutNews">
+            </div>
+        </div>
+            <ul class="thumb">
+                <li><img src="thumb2.png.png"onclick="imgSlider('thumb2.png.png');changeCircleColor('#c10101')"></li>
+                <li><img src="thumb1.png.png" onclick="imgSlider('thumb1.png.png');changeCircleColor('#040404')"></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.FutNews').src = anything
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
